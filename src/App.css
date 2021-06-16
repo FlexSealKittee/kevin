@@ -1,0 +1,97 @@
+:root {
+  --neumorphism-color-dark: #2a313c;
+  --neumorphic-gradient-start-dark: #242a33;
+  --neumorphic-gradient-end-dark: #303845;
+  --neumorphism-color-light: #afc3e4;
+  --neumorphic-gradient-start-light: #95a6c2;
+  --neumorphic-gradient-end-light: #c9e0ff;
+  --neumorphic-red: #ff3838;
+  --neumorphic-green: #32ff7e;
+}
+
+.app {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app.dark, .app.dark > * {
+  background: var(--neumorphism-color-dark);
+  color: var(--neumorphism-color-light);
+}
+
+.app.light, .app.light > * {
+  background: var(--neumorphism-color-light);
+  color: var(--neumorphism-color-dark);
+}
+
+*.neumorphic-dark {
+  background: var(--neumorphism-color-dark);
+  box-shadow: -30px -30px 50px var(--neumorphic-gradient-start-dark), 30px 30px 50px var(--neumorphic-gradient-end-dark);
+  transition: box-shadow 0.5s;
+}
+
+*.neumorphic-dark:hover {
+  background: var(--neumorphism-color-dark);
+  box-shadow: -5px -5px 20px var(--neumorphic-gradient-start-dark), 5px 5px 20px var(--neumorphic-gradient-end-dark);
+}
+
+*.neumorphic-inset-dark {
+  background: var(--neumorphism-color-dark);
+  box-shadow: inset -30px -30px 50px var(--neumorphic-gradient-start-dark), inset 30px 30px 50px var(--neumorphic-gradient-end-dark);
+  transition: box-shadow 0.5s;
+}
+
+*.neumorphic-inset-dark:hover {
+  background: var(--neumorphism-color-dark);
+  box-shadow: inset -5px -5px 20px var(--neumorphic-gradient-start-dark), inset 5px 5px 20px var(--neumorphic-gradient-end-dark);
+}
+
+*.neumorphic-light {
+  background: var(--neumorphism-color-light);
+  box-shadow: -30px -30px 50px var(--neumorphic-gradient-start-light), 30px 30px 50px var(--neumorphic-gradient-end-light);
+  transition: box-shadow 0.5s;
+}
+
+*.neumorphic-light:hover {
+  background: var(--neumorphism-color-light);
+  box-shadow: -5px -5px 20px var(--neumorphic-gradient-start-light), 5px 5px 20px var(--neumorphic-gradient-end-light);
+}
+
+*.neumorphic-inset-light {
+  background: var(--neumorphism-color-light);
+  box-shadow: inset -30px -30px 50px var(--neumorphic-gradient-start-light), inset 30px 30px 50px var(--neumorphic-gradient-end-light);
+  transition: box-shadow 0.5s;
+}
+
+*.neumorphic-inset-light:hover {
+  background: var(--neumorphism-color-light);
+  box-shadow: inset -5px -5px 20px var(--neumorphic-gradient-start-light), inset 5px 5px 20px var(--neumorphic-gradient-end-light);
+}
+
+*.neumorphic-red {
+  color: var(--neumorphic-red) !important;
+}
+
+*.neumorphic-green {
+  color: var(--neumorphic-green) !important;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  margin: 0px 15px;
+}
